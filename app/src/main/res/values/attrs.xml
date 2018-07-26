@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageSeekBar">
+        <!-- Max value of it -->
+        <attr name="iMax" format="integer"/>
+        <!-- Min value of it -->
+        <attr name="iMin" format="integer"/>
+        <!-- Current value of it -->
+        <attr name="iProgress" format="float"/>
+        <!-- The top bar text size -->
+        <attr name="iTextSize" format="dimension|reference"/>
+        <!-- The top bar text color -->
+        <attr name="iTextColor" format="color"/>
+        <!-- The below bar text size -->
+        <attr name="iBackgroundTextSize" format="dimension|reference"/>
+        <!-- The below bar text color -->
+        <attr name="iBackgroundTextColor" format="color|reference"/>
+        <!-- The top bar drawable -->
+        <attr name="iDrawable" format="reference"/>
+        <!-- The below bar drawable -->
+        <attr name="iBackgroundDrawable" format="reference"/>
+        <!-- The thumb drawable -->
+        <attr name="iThumbDrawable" format="reference"/>
+        <!-- Bar Width -->
+        <attr name="iWidth" format="dimension|reference"/>
+        <!-- Bar height -->
+        <attr name="iHeight" format="dimension|reference"/>
+        <!-- The thumb width -->
+        <attr name="iThumbWidth" format="dimension|reference"/>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Header -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/index_header"
+        android:elevation="10dp"
+        android:padding="10dp">
+
+        <ImageView
+            android:id="@+id/iv_user_avatar"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/index_user_avatar" />
+
+        <LinearLayout
+            android:id="@+id/ll_user_name_time"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/iv_user_avatar"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_username"
+                android:textColor="@color/colorWhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/index_user_post_time"
+                android:textColor="@color/colorWhite"
+                android:textSize="9sp" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/iv_user_location"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/tv_user_location"
+            android:background="@drawable/ic_location" />
+
+        <TextView
+            android:id="@+id/tv_user_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:text="@string/index_user_location"
+            android:textColor="@color/colorWhite" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:background="@color/colorPrimary" />
+
+    <SeekBar
+        android:progressDrawable="@drawable/index_seek_bar"
+        android:background="@drawable/index_seek_bar_background"
+        android:progress="10"
+        android:max="100"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+</LinearLayout>
