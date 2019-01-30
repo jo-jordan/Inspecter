@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="demo_pic_url">
+        <item>http://img.mp.itc.cn/upload/20161015/0f156e4a21414e9194fa4e1eeaa37924_th.jpg</item>
+        <item>http://img.mp.itc.cn/upload/20161015/a437913ebb3040dc9fba7f84bfe8dd79_th.jpg</item>
+        <item>http://img.mp.itc.cn/upload/20161015/ca1147ea9a8f44cc8856fa91f76341c1_th.jpg</item>
+        <item>http://n1.itc.cn/img8/wb/smccloud/recom/2015/11/16/144761713126358527.JPEG</item>
+        <item>http://n1.itc.cn/img8/wb/smccloud/recom/2015/11/16/144761713152204191.JPEG</item>
+        <item>http://n1.itc.cn/img8/wb/smccloud/recom/2015/11/16/144761713357286229.JPEG</item>
+        <item>http://photocdn.sohu.com/20151031/mp38924770_1446257017839_2.jpeg</item>
+        <item>http://online.sccnn.com/desk2/1389/cool20081016_001.jpg</item>
+        <item>http://online.sccnn.com/desk2/1389/cool20081016_002.jpg</item>
+        <item>http://mpic.tiankong.com/37c/15d/37c15da98d7c3541047d7da1ae7bfe5e/640.jpg@!450h</item>
+        <item>https://raw.githubusercontent.com/lzjlxebr/hurrypush-data/master/image/main_ui.gif</item>
+        <item>https://raw.githubusercontent.com/lzjlxebr/hurrypush-data/master/image/real_work.gif</item>
+        <item>https://raw.githubusercontent.com/lzjlxebr/hurrypush-data/master/image/settings.gif</item>
+    </string-array>
+
+
+    <string-array name="demo_video_url">
+        <item>https://scontent-hkg3-2.cdninstagram.com/vp/1e4742ae7337e8e4ed6687d8f0cd0034/5B5CF9EA/t50.2886-16/23360522_181506292410133_7824752766256939008_n.mp4</item>
+        <item>https://scontent-hkg3-2.cdninstagram.com/vp/e5f883d03dba3ba599d45bb805654c27/5B5C748B/t50.2886-16/23228277_310158932799665_65682668569755648_n.mp4</item>
+        <item>https://scontent-hkg3-2.cdninstagram.com/vp/74fa4454e0609f8665235eac102e73a0/5B5CAE9A/t50.2886-16/23228324_155305868409664_3777539692359057408_n.mp4</item>
+        <item>https://scontent-hkg3-2.cdninstagram.com/vp/4ae7af97a7ea4506756d241e53f3c4ac/5B5C6F97/t50.2886-16/23303303_290277661466746_8447036915483410432_n.mp4</item>
+        <item>https://scontent-hkg3-2.cdninstagram.com/vp/1efcdbac9722bb378ed1255696bc466e/5B5C7FD5/t50.2886-16/23303951_2277556055804434_6311808054719414272_n.mp4</item>
+        <item>https://scontent-hkg3-2.cdninstagram.com/vp/763c24443151813e9d292d58481b9734/5B5C9B3F/t50.2886-16/23299359_1918847331701874_8501116081362960384_n.mp4</item>
+    </string-array>
+</resources>

@@ -20,6 +20,7 @@ public abstract class BaseActivity extends SupportActivity {
         initView();
         initData();
         initListener();
+        App.getApplication().addActivity(this);
     }
 
     protected abstract void initListener();

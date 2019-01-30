@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#363636</color>
-    <color name="colorPrimaryDark">#1e1e1e</color>
-    <color name="colorAccent">#F5A623</color>
+    <color name="colorPrimary">@color/colorGoogleBlue</color>
+    <color name="colorPrimaryDark">@color/colorGoogleGreen</color>
+    <color name="colorAccent">@color/colorGoogleYellow</color>
     <color name="colorGray">#D8D8D8</color>
     <color name="colorWhite">#FFFFFF</color>
+
+    <color name="colorGoogleGreen">#3cba54</color>
+    <color name="colorGoogleYellow">#f4c20d</color>
+    <color name="colorGoogleRed">#db3236</color>
+    <color name="colorGoogleBlue">#4885ed</color>
+
+    <color name="colorProgress">#66000000</color>
+    <color name="colorProgressBackground">#00000000</color>
 </resources>

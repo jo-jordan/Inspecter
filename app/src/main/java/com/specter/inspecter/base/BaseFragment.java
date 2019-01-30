@@ -2,17 +2,23 @@ package com.specter.inspecter.base;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.support.annotation.IdRes;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import com.chad.library.adapter.base.BaseQuickAdapter;
 
 import me.yokeyword.fragmentation.SupportFragment;
 
 public abstract class BaseFragment extends SupportFragment {
 
     public Context mContext;
+    public BaseQuickAdapter mAdapter;
+    public RecyclerView mRecyclerView;
 
     @Nullable
     @Override
@@ -23,7 +29,7 @@ public abstract class BaseFragment extends SupportFragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-
+        mContext = getContext();
         initContext();
         initView();
         initData();
@@ -41,4 +47,8 @@ public abstract class BaseFragment extends SupportFragment {
     }
 
     protected abstract int setResourceId();
+
+    public <T extends View> T findView(@IdRes int resId){
+        return (T)getView().findViewById(resId);
+    }
 }

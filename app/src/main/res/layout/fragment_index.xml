@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical">
@@ -9,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="@drawable/index_header"
-        android:elevation="10dp"
+        android:elevation="20dp"
         android:padding="10dp">
 
         <ImageView
@@ -29,12 +30,14 @@
             android:orientation="vertical">
 
             <TextView
+                android:id="@+id/tv_user_name"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/index_username"
                 android:textColor="@color/colorWhite" />
 
             <TextView
+                android:id="@+id/tv_post_time"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/index_user_post_time"
@@ -44,34 +47,124 @@
         </LinearLayout>
 
         <ImageView
-            android:id="@+id/iv_user_location"
+            android:id="@+id/iv_post_location"
             android:layout_width="12dp"
             android:layout_height="12dp"
             android:layout_centerVertical="true"
-            android:layout_toStartOf="@+id/tv_user_location"
+            android:layout_toStartOf="@+id/tv_post_location"
             android:background="@drawable/ic_location" />
 
         <TextView
-            android:id="@+id/tv_user_location"
+            android:id="@+id/tv_post_location"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:text="@string/index_user_location"
             android:textColor="@color/colorWhite" />
+
     </RelativeLayout>
 
-    <View
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@color/colorPrimary" />
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:layout_height="0dp">
 
-    <SeekBar
-        android:progressDrawable="@drawable/index_seek_bar"
-        android:background="@drawable/index_seek_bar_background"
-        android:progress="10"
-        android:max="100"
+        <android.support.v7.widget.RecyclerView
+            android:layout_gravity="center"
+            android:id="@+id/rv_images"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+    </FrameLayout>
+
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="40dp" />
+        android:layout_height="86dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:elevation="20dp"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:background="@drawable/index_seek_bar_like"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="3dp"
+            android:paddingEnd="6dp"
+            android:paddingStart="6dp"
+            android:paddingTop="3dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:background="@drawable/index_like_hearts" />
+
+            <TextView
+                android:id="@+id/tv_user_likes"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="200"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginStart="6dp"
+                android:background="@drawable/index_like_comments" />
+
+            <TextView
+                android:id="@+id/tv_user_comments"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:text="1000"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="bottom">
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/index_seekbar_half_start_circle" />
+
+            <View
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="end"
+                android:background="@drawable/index_seekbar_half_end_circle" />
+
+            <com.specter.inspecter.custom.ImageSeekBar
+                android:id="@+id/isb_indicator"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:max="100"
+                android:maxHeight="40dp"
+                android:minHeight="40dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/index_seek_bar"
+                android:splitTrack="false"
+                android:thumb="@drawable/index_seek_bar_thumb" />
+
+        </FrameLayout>
+
+    </LinearLayout>
 
 </LinearLayout>

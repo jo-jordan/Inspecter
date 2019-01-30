@@ -1,12 +1,11 @@
 package com.specter.inspecter.util;
 
-import android.content.Context;
 import android.content.res.Resources;
 import android.util.DisplayMetrics;
 
 import com.specter.inspecter.base.App;
 
-public class SIzeUnitUtil {
+public class SizeUnitUtil {
     /**
      * This method converts dp unit to equivalent pixels, depending on device density.
      *
